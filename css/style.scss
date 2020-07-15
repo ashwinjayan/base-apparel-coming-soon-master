@@ -137,7 +137,7 @@ body {
         border-radius   : 2em;
         border          : 1px solid $light-red;
         padding         : 1em 1.5em;
-        background-color: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     }
 
     input::placeholder {

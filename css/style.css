@@ -166,7 +166,7 @@ body {
   border-radius: 2em;
   border: 1px solid #ce9797;
   padding: 1em 1.5em;
-  background-color: linear-gradient(135deg, white, #fff5f5);
+  background: linear-gradient(135deg, white, #fff5f5);
 }
 
 .form input::-webkit-input-placeholder {
