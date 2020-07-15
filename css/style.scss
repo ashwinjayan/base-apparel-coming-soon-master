@@ -41,7 +41,7 @@ body {
 
     @media only screen and (min-width: 23.5em) {
         height               : 100vh;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 20fr 12fr;
         grid-template-rows   : 2fr 10fr auto;
         grid-template-areas  : "logo image"
             "content image"
@@ -56,11 +56,13 @@ body {
     justify-self: left;
 
     img {
-        width: 6em;
+        width     : 100%;
+        max-width : 10em;
+        max-height: 10em;
     }
 
     @media only screen and (min-width: 23.5em) {
-        padding: 0;
+        padding    : 0;
         margin-left: 18%;
     }
 }
@@ -96,7 +98,7 @@ body {
         letter-spacing: 0.3em;
         word-spacing  : 23em;
         margin-bottom : 0;
-        color: $grayish-red;
+        color         : $grayish-red;
 
         span {
             color      : $light-red;
@@ -111,13 +113,14 @@ body {
     }
 
     @media only screen and (min-width: 23.5em) {
-        text-align : left;
-        align-items: flex-start;
-        margin-left: 25%;
-        grid-area: 'content';
+        margin-top: 3em;
+        text-align     : left;
+        align-items    : flex-start;
+        margin-left    : 25%;
+        grid-area      : 'content';
 
         p {
-            width: inherit;
+            width    : inherit;
             max-width: 27em;
         }
     }
@@ -129,11 +132,12 @@ body {
     position  : relative;
 
     input {
-        max-width: 27em;
-        width        : 80%;
-        border-radius: 2em;
-        border       : 1px solid $light-red;
-        padding      : 1em 1.5em;
+        max-width       : 27em;
+        width           : 80%;
+        border-radius   : 2em;
+        border          : 1px solid $light-red;
+        padding         : 1em 1.5em;
+        background-color: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     }
 
     input::placeholder {
@@ -153,7 +157,18 @@ body {
 
     @media only screen and (min-width: 23.5em) {
         margin-top: 1em;
-        width: inherit;
+        width     : inherit;
+
+        input {
+            padding         : 1.2em 2em;
+            border-radius   : 4em;
+        }
+
+        button {
+            width: 8em;
+            border-radius   : 4em;
+            transform    : translateX(-100px);
+        }
     }
 }
 
@@ -162,27 +177,27 @@ body {
 }
 
 .flex-display {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
+    align-items    : center;
 }
 
 .error {
-    width          : 75%;
-    max-width: 23em;
-    margin-top     : 1em;
-    color          : $soft-red;
+    width     : 75%;
+    max-width : 23em;
+    margin-top: 1em;
+    color     : $soft-red;
 
     @media only screen and (min-width: 23.5em) {
         margin-left: 1em;
-        margin-top: 1em;
+        margin-top : 1em;
     }
 }
 
 .attribution {
     font-size : 11px;
     text-align: center;
-    color: $light-red;
+    color     : $light-red;
 }
 
 .attribution a {
