@@ -6,6 +6,17 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: 'Josefin Sans', sans-serif;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 ::-webkit-input-placeholder {
@@ -22,6 +33,104 @@ body {
 
 ::placeholder {
   font-family: 'Josefin Sans', sans-serif;
+}
+
+.landing {
+  width: 23.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 3fr 4.5fr;
+      grid-template-rows: 1fr 3fr 4.5fr;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.5em;
+}
+
+.header img {
+  width: 6em;
+}
+
+.hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 23.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-content h1 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.3em;
+  word-spacing: 23em;
+  margin-bottom: 0;
+}
+
+.hero-content h1 span {
+  color: #ce9797;
+  font-weight: 200;
+}
+
+.hero-content p {
+  width: 22em;
+  color: #ce9797;
+  line-height: 1.4em;
+}
+
+.form {
+  text-align: none;
+  width: 100%;
+  position: relative;
+}
+
+.form input {
+  width: 21em;
+  border-radius: 2em;
+  border: 1px solid #ce9797;
+  padding: 1em 1.5em;
+}
+
+.form input::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+.form input:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.form input::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.form input::placeholder {
+  color: #ce9797;
+}
+
+.form button {
+  position: absolute;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-transform: translateX(-65px);
+          transform: translateX(-65px);
+  border-radius: 2em;
+  width: 5em;
+  height: 100%;
+  border: none;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .attribution {
